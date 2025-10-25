@@ -1,21 +1,35 @@
-# Welcome to your Expo app 👋
+# Welcome to WiiCoin app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
 
-1. Install dependencies
+1. Install dependencies for both the app root and the electrum-proxy folder
+2. It is advisable you made use of node version 20, download nvm (node version manager) to make it easier
+   
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. If you encounter depedency error while installing module(s), add --legacy-peer-deps
+
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+   
+
+4. Start the app
 
    ```bash
     npx expo start
    ```
+5. Run the NodeJS Proxy Server in electrum-proxy folder
 
+   Server.js
+   ```bash
+   node server.js
+   ```
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
